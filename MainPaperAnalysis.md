@@ -1,14 +1,16 @@
 # The following is a technical paper analysis and report of "Concurrency in Go and Java: Performance Analysis"
-## Abstract:
+## Abstract
 To analyze concurrency features of the two programming languages, Java threads and Goroutines have been used. Go is a compiled, 
 garbage collected and concurrent programming language. It is designed for fast compilation time and ease of programming. Java is 
 a concurrent, object-oriented, and garbage-collected programming language.
-## Method:
+## Method
 **Matrix multiplication** has been used as a standard to measure performance. Define two matrices say A and B that have the same length of row 
 and column. Then divide the first matrix into some parts, then calculate product of part A and matrix B. After completion of all 
 parts of part A, merge all the results into a new matrix C.
 
-### Go Implementation:
+### Java Implementation
+
+### Go Implementation
 **Step 1** - Specify the number of CPU cores on the local system being used.
 This can be achieved by: 
 1. Setting the ``GOMAXPROCS`` environment variable to number of CPU cores required by program.
