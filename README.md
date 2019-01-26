@@ -67,7 +67,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Avakash Bhat** - ``171CO114`` - _**Dept. of Computer Science Engineering, NITK**_
+* **Avakash Bhat** - ``171CO110`` - _**Dept. of Computer Science Engineering, NITK**_
 * **Abhinav P Y**  - ``171CO103`` - _**Dept. of Computer Science Engineering, NITK**_
 
 ## License
