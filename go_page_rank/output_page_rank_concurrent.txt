@@ -1,0 +1,23 @@
+The graph is as follows:
+a[0][0] = 0.500000
+a[0][1] = 0.500000
+a[0][2] = 0.000000
+a[1][0] = 0.500000
+a[1][1] = 0.000000
+a[1][2] = 1.000000
+a[2][0] = 0.000000
+a[2][1] = 0.500000
+a[2][2] = 0.000000
+The initial values assigned to each page are as follows:
+b[0] = 0.333333
+b[1] = 0.333333
+b[2] = 0.333333
+this is epsilon:
+1e-05
+this is the number of nodes:
+3
+the final time taken is: 
+128.17µs
+The number of matrix multiplications performed are: 
+85
+[0.3999996 0.39999962 0.19999978]
