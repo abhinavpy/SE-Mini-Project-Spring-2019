@@ -1,17 +1,28 @@
 package main
 
-import "fmt"
-import "sync"
-import "time"
+import (
+	"os"
+	"fmt"
+	"sync"
+    "time"
+    "strconv"
+)
 
+var n int
 
 func main(){
+    var err error
+    n, err = strconv.Atoi(os.Args[1])
 
-    matrix_a := make([][]int,1000);
+    if err != nil {
+        fmt.Println("Error occured while taking the argument")
+    }
+
+    matrix_a := make([][]int,n);
 
     for i:=0;i<len(matrix_a);i++{
 
-        matrix_a[i]=make([]int,1000);
+        matrix_a[i]=make([]int,n);
 
     }
 
@@ -23,11 +34,11 @@ func main(){
         }
     }
 
-    matrix_b := make([][]int,1000);
+    matrix_b := make([][]int,n);
 
     for i:=0;i<len(matrix_b);i++{
 
-        matrix_b[i]=make([]int,1000);
+        matrix_b[i]=make([]int,n);
 
     }
 
@@ -56,17 +67,17 @@ func multiply(matrix_a [][] int,matrix_b [][] int) ([][] int){
 
 	start := time.Now()
 
-    matrix_c := make([][]int,1000);
+    matrix_c := make([][]int,n);
 
     for i:=0;i<len(matrix_c);i++{
-        matrix_c[i]=make([]int,1000);
+        matrix_c[i]=make([]int,n);
     }
 
     
 
     var wg sync.WaitGroup
-	for i := 0; i < 1000; i++ {
-    	for j := 0; j < 1000; j++ {
+	for i := 0; i < n; i++ {
+    	for j := 0; j < n; j++ {
 	        wg.Add(1) // Tell the WaitGroup to wait for another thing.
 	        go func(i, j int) {
 	            matrix_c[i][j] = pmultiply(matrix_a, matrix_b, i, j)
