@@ -11,3 +11,5 @@ Single thread:
 512:534.6ms
 1024:7796ms
 2048:98719ms
+
+BinarySize: 8.1kb
