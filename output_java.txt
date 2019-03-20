@@ -39,3 +39,60 @@ Signals delivered: 0
 Page size (bytes): 4096
 Exit status: 0
 
+
+7x7 Matrix mentioned in https://nlp.stanford.edu/IR-book/html/htmledition/the-pagerank-computation-1.html
+
+BinarySize:3.1kb
+
+
+final static double M[][] = {{0.02,0.02,0.31,0.02,0.02,0.02,0.02},{0.02,0.45,0.02,0.02,0.02,0.02,0.02},{0.88,0.45,0.31,0.02,0.02,0.02,0.02},{0.02,0.02,0.31,0.45,0.02,0.02,0.31},{0.02,0.02,0.02,0.45,0.02,0.02,0.31},{0.02,0.02,0.02,0.02,0.02,0.45,0.02},{0.02,0.02,0.02,0.02,0.88,0.45,0.31}};
+
+Results: 0.05 0.04 0.11 0.25 0.21 0.04 031
+e : iterations : time
+0.01:10:45
+0.02:8:38
+0.04:6:33
+0.06:5:27
+0.08:4:23
+0.1::3:24
+
+
+final static double M[][] = {{0.5,0.5,0},{0.5,0,1},{0,0.5,0}};
+Results: 0.4,0.4,0.2
+
+e : iterations : time
+0.1: 8 : 14
+0.05: 11 : 19
+0.005: 22 : 30
+0.001: 30 : 33
+0.0005: 33 : 35
+0.0001: 41 : 37
+0.00001: 55 : 50
+0.00001: 62 : 56
+
+	User time (seconds): 3.14
+	System time (seconds): 0.23
+	Percent of CPU this job got: 76%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 72144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 100
+	Minor (reclaiming a frame) page faults: 14894
+	Voluntary context switches: 2232
+	Involuntary context switches: 251
+	Swaps: 0
+	File system inputs: 60344
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+
