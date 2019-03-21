@@ -6,7 +6,7 @@ With Goroutines:
 2048: 9370.37895
 
 Without Goroutines:
-192: 
+192:
 256:
 512:
 1024:
@@ -33,3 +33,8 @@ Socket messages sent: 0
 Socket messages received: 0
 Signals delivered: 0
 Page size (bytes): 4096
+
+
+
+Page Rank 7x7 Matrix:
+0.01: 46.66
