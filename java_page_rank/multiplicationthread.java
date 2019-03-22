@@ -34,10 +34,10 @@ public class multiplicationthread extends Thread {
 		for(int i = 0;i<dimension;i++) {
 			
 			sum+= (double)a[(int)row][(int)i] * b[(int)i][(int)col];
-			prod[(int)row][(int)col]=sum;
-			System.out.println("sum"+ prod[(int)row][(int)col] +"a[row][i]"+a[(int)row][(int)i]+"b[i][col]"+b[(int)i][(int)col]+" row"+row+" col:"+col + " i:"+i+" dimension"+dimension);
+			
+//			System.out.println("sum"+ prod[(int)row][(int)col] +"a[row][i]"+a[(int)row][(int)i]+"b[i][col]"+b[(int)i][(int)col]+" row"+row+" col:"+col + " i:"+i+" dimension"+dimension);
 		}
-		
+		prod[(int)row][(int)col]=sum;
 	
 	}
 }
