@@ -1,0 +1,77 @@
+With Goroutines:
+192: 9.859185
+256: 44.17086
+512: 71.11728
+1024: 470.755658
+2048: 9370.37895
+
+Without Goroutines:
+192:
+256:
+512:
+1024:
+2048:
+
+User time (seconds): 0.01
+System time (seconds): 0.00
+Percent of CPU this job got: 119%
+Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.02
+Average shared text size (kbytes): 0
+Average unshared data size (kbytes): 0
+Average stack size (kbytes): 0
+Average total size (kbytes): 0
+Maximum resident set size (kbytes): 10652
+Average resident set size (kbytes): 0
+Major (requiring I/O) page faults: 0
+Minor (reclaiming a frame) page faults: 787
+Voluntary context switches: 711
+Involuntary context switches: 27
+Swaps: 0
+File system inputs: 0
+File system outputs: 0
+Socket messages sent: 0
+Socket messages received: 0
+Signals delivered: 0
+Page size (bytes): 4096
+
+Page Rank: 
+Binary file size: 27.1 kilobytes
+
+Page Rank data OF 7X7 MATRIX:
+0.01: 45.55
+0.02: 39.72
+0.04: 22.708
+0.06: 21.03
+0.08: 20.83
+0.1:  17.985
+
+Page Rank data of 3x3 Matrix:
+0.00001: 43.048
+0.0001:  36.97 
+0.0005:  36.072
+0.001:   31.661
+0.005:   23.98
+0.05:    17.102
+0.1:     12.113
+
+User time (seconds): 0.00
+System time (seconds): 0.01
+Percent of CPU this job got: 121%
+Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 11128
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 730
+        Voluntary context switches: 650
+        Involuntary context switches: 39
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096

@@ -5,8 +5,14 @@ import "time"
 //import "math"
 import "sync"
 
+
+//default is 1
+
 func main() {
+
 	matrix_a := [][]float32{{0.5, 0.5, 0}, {0.5, 0, 1}, {0, 0.5, 0}}
+
+	//matrix_a := [][]float32{{0.02,0.02,0.31,0.02,0.02,0.02,0.02},{0.02,0.45,0.02,0.02,0.02,0.02,0.02},{0.88,0.45,0.31,0.02,0.02,0.02,0.02},{0.02,0.02,0.31,0.45,0.02,0.02,0.31},{0.02,0.02,0.02,0.45,0.02,0.02,0.31},{0.02,0.02,0.02,0.02,0.02,0.45,0.02},{0.02,0.02,0.02,0.02,0.88,0.45,0.31}}
 
 	num_of_nodes := 3
 	epsilon := 0.00001
@@ -19,7 +25,7 @@ func main() {
 	}
 
 	fmt.Println("The initial values assigned to each page are as follows:")
-	matrix_b := []float32{0.333333, 0.333333, 0.333333}
+	matrix_b := []float32{0.33333, 0.33333, 0.33333}
 
 	for i := 0; i < 3; i++ {
 		fmt.Printf("b[%d] = %f\n", i, matrix_b[i])
@@ -54,7 +60,7 @@ func multiply(matrix_a [][]float32, matrix_b []float32) []float32 {
 	
 	countiter := 0
 
-	checkprev := make([]float32, 3)
+	checkprev := make([]float32, len(matrix_b))
 	seconds := 0
 	extraSum := time.Duration(seconds)
 
@@ -62,11 +68,11 @@ func multiply(matrix_a [][]float32, matrix_b []float32) []float32 {
 
 		countiter += 1
 		//fmt.Println("This is iteration", countiter)
-		temp := make([]float32, 3)
+		temp := make([]float32, len(matrix_b))
 
 		var wg sync.WaitGroup
 
-		for i := 0; i < 3; i++ {
+		for i := 0; i < len(matrix_b); i++ {
 			wg.Add(1) // Tell the WaitGroup to wait for another thing.
 			go func(i int) {
 				temp[i] = pmultiply(matrix_a, matrix_b, i)
@@ -78,23 +84,23 @@ func multiply(matrix_a [][]float32, matrix_b []float32) []float32 {
 
 		extraTimeStart := time.Now()
 
-		for k := 0; k < 3; k++ {
+		for k := 0; k < len(matrix_b); k++ {
 			matrix_b[k] = temp[k]
 		}
 
 		x := float32(2)
 
-		for i := 0; i < 3; i++ {
+		for i := 0; i < len(matrix_b); i++ {
 			if checkprev[i] - matrix_b[i] < x {
 				x = checkprev[i] - matrix_b[i]
 			}
 		}
 
-		if countiter > 84 {
+		if countiter >= 55 {
 			break
 		}
 
-		for p := 0; p < 3; p++ {
+		for p := 0; p < len(matrix_b); p++ {
 			checkprev[p] = matrix_b[p]
 		}
 
