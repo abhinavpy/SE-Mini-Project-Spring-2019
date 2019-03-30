@@ -1,16 +1,10 @@
 With Goroutines:
+Matrix size : Time in milliseconds
 192: 9.859185
 256: 44.17086
 512: 71.11728
 1024: 470.755658
 2048: 9370.37895
-
-Without Goroutines:
-192:
-256:
-512:
-1024:
-2048:
 
 User time (seconds): 0.01
 System time (seconds): 0.00
@@ -38,6 +32,7 @@ Page Rank:
 Binary file size: 27.1 kilobytes
 
 Page Rank data OF 7X7 MATRIX:
+epsilon value : time in milli seconds
 0.01: 45.55
 0.02: 39.72
 0.04: 22.708
@@ -46,6 +41,7 @@ Page Rank data OF 7X7 MATRIX:
 0.1:  17.985
 
 Page Rank data of 3x3 Matrix:
+epsilon value : time in milli seconds
 0.00001: 43.048
 0.0001:  36.97 
 0.0005:  36.072
